@@ -1,0 +1,74 @@
+main {
+  background: #f3f4f7;
+}
+
+.title-parceiros {
+  background: white;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+  color: #1c1642;
+}
+
+.div-tatle {
+  margin: 2rem 6rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+table {
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  width: 97%;
+}
+
+thead div {
+  height: 5rem;
+}
+
+thead h2 {
+  font-size: 16px;
+  color: #1c1642;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: white;
+}
+
+tr {
+  height: 4rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #ecf2fe;
+}
+
+tr span {
+  font-size: 24px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+tr td h2,
+h3,
+h4,
+h5 {
+  font-size: 16px;
+  color: #707070;
+}
+
+table button {
+  border: 1px solid #3b82f6;
+  background: none;
+  color: #3b82f6;
+}

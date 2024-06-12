@@ -1,0 +1,33 @@
+.banner {
+  background-image: url(../imagens/coleta-1920x1280.jpg);
+  height: 40rem;
+}
+
+.banner-childre {
+  height: 40rem
+}
+
+.quem-somos {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 0 4rem;
+}
+
+.quem-somos h1 {
+  margin-bottom: 2rem;
+}
+
+.quem-somos .contaner-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.quem-somos .contaner-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quem-somos .contaner-info div p {
+  text-align: justify;
+}

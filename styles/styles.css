@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  background: #f3f4f7;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header .menu-header {
+  height: 4.5rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: white;
+
+}
+
+h1 span {
+  color: #459b5a;
+}
+
+h1 span+span {
+  color: #265197;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+ul li a {
+  color: #1c1642;
+  font-weight: 500;
+}
+
+.link-buttom {
+  display: flex;
+  gap: 2rem;
+}
+
+.link-buttom div {
+  display: flex;
+  gap: 1rem;
+}
+
+.link-buttom div button {
+  background: #459b5a;
+  color: white;
+}
+
+.link-buttom div button+button {
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  background: none;
+}
+
+.banner {
+  background-image: url(../imagens/smoke-258786-1281-1280x828.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-childre {
+  position: absolute;
+  z-index: 1;
+  height: 40rem;
+  width: 100%;
+  opacity: .6;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-banner-children {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.container-banner-children h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.container-banner-children p {
+  color: white;
+}
+
+.container-banner-children button {
+  padding: .6rem 2.5rem;
+  background: #459b5a;
+  color: white;
+  font-size: 1rem;
+}
+
+.inf-clear-city {
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+  display: flex;
+  gap: 2rem;
+  padding: 0 6rem;
+}
+
+.inf-clear-city h1 {
+  color: #1c1642;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.inf-clear-city p {
+  text-align: justify;
+  line-height: 24px;
+}
+
+.Sobre-clear p {
+  width: 32rem;
+}
+
+.border-vertical {
+  width: 6px;
+  height: 8rem;
+  background: #3b82f6;
+}
+
+.nossos-servico {
+  display: flex;
+  flex-direction: column;
+}
+
+.nossos-servico h1,
+.empresas h1,
+.quem-somos h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1c1642;
+}
+
+.nossos-servico .card-servico {
+  display: flex;
+  height: 14rem;
+  margin-top: 3rem;
+  margin: 3rem 6rem 2rem 6rem;
+}
+
+.nossos-servico .card-servico section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  width: 20rem;
+}
+
+.nossos-servico .card-servico section h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.nossos-servico section:hover {
+  background: #13c225;
+}
+
+.nossos-servico .card-servico #section-servico-1 {
+  text-align: center;
+  height: 100%;
+  background-color: #1b3a61;
+}
+
+.nossos-servico .card-servico #section-servico-2 {
+  text-align: center;
+  height: 100%;
+  background-color: #1d3f69;
+}
+
+.nossos-servico .card-servico #section-servico-3 {
+  text-align: center;
+  height: 100%;
+  background-color: #1f4471;
+}
+
+.nossos-servico .card-servico #section-servico-4 {
+  text-align: center;
+  height: 100%;
+  background-color: #224879;
+}
+
+.empresas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.empresas h1 {
+  margin-bottom: 16px;
+}
+
+.empresas p {
+  margin: 0 auto;
+  width: 44rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container-empresas {
+  margin: 4rem 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container-empresas h3 {
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 200;
+}
+
+.container-empresas div {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  gap: 10px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 0px 8px #999;
+}
+
+.container-empresas div .section-img {
+  height: 8rem;
+}
+
+
+.container-empresas div section img {
+  width: 19.9rem;
+  height: 11rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.section-empresas-button {
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-empresas-button button {
+  background: white;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  margin-top: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #1c1642;
+}
+
+footer .contamer-links-footera {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .contamer-links-footera ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .contamer-links-footera ul h1 {
+  color: #13c225;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+footer .contamer-links-footera ul li a {
+  color: #FAFAFA;
+}
+
+footer .copy {
+  height: 4.5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a1121;
+}
+
+footer .copy section {
+  color: #FAFAFA;
+}
+
+
+button {
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
