@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Clear-city</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="font/css/all.css">
+  <link rel="stylesheet" href="styles/parceiros.css">
+</head>
+
+<body class="container">
+  <header class="header">
+    <h1>Contetores</h1>
+    <button class="buttonCadastro">Cadastrar de Contetores</button>
+  </header>
+  <div class="menuLeft">
+    <ul>
+      <h1>Menu</h1>
+      <li><a href="admin.html">Cadastro</a></li>
+      <li><a href="parceiros.html">Parceiros</a></li>
+      <li><a href="contetor.html">Contetores</a></li>
+      <li><a href="empresas.html">Empresa</a></li>
+    </ul>
+  </div>
+  <div class="containerBody"></div>
+  <div class="modal">
+    <div class="card">
+      <h1>Cadastrar Contetor</h1>
+      <form action="">
+        <div class="card-dados">
+          <section>
+
+            <label for="nome" id="labelNome">
+              Número:
+              <input type="number" id="nome" placeholder="Digite o Números">
+              <p></p>
+            </label>
+
+            <label for="localizacao" id="labelLocalizacao">
+              Localização:
+              <input type="text" id="localizacao" placeholder="Digite a localizacao">
+              <p></p>
+            </label>
+
+            <label for="gastronomia" id="labelGastronomia">
+              Tipo de Lixo:
+              <input type="text" id="gastronomia" placeholder="Digite o tipo de lixo">
+              <p></p>
+            </label>
+
+          </section>
+          <section>
+            <label for="lingua" id="labelLingua">
+              Cor:
+              <input type="text" id="lingua" placeholder="Digite a cor">
+              <p></p>
+            </label>
+            <div class="card-btton">
+              <button class="buttonCadastrarHotel">Cadastrar</button>
+              <button class="cancelModal">Cancelar</button>
+            </div>
+          </section>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/contetor.js"></script>
+</body>
+
+</html>

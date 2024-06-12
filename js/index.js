@@ -18,8 +18,19 @@ function Cancel() {
 };
 
 document.querySelector(`.login`).addEventListener(`click`, () => {
-  window.location.replace("user-logado/user.html");
+
+  let passWord = document.querySelector("#inputPassword").value;
+  let email = document.querySelector("#inputEmail").value;
+
+  if (passWord == 12345 && email == "cesar@gmail.com") {
+    window.location.replace("user-logado/user.html");
+  }
+
+  if (passWord == 12345 && email == "admin@gmail.com") {
+    window.location.replace("admin/admin.html");
+  }
 });
+
 
 document.querySelector(`.btn-logar`).onclick = mostraMoodal;
 document.querySelector(`.btn-logar-1`).onclick = mostraMoodal;

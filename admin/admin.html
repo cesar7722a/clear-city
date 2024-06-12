@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Clear-city</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="font/css/all.css">
+</head>
+
+<body class="container">
+  <header class="header">
+    <h1>Cadastro de Empresas</h1>
+    <button class="button-cadastrar-quarto">Cadastrar Empresa</button>
+  </header>
+  <div class="menuLeft">
+    <ul>
+      <h1>Menu</h1>
+      <li><a href="admin.html">Cadastro</a></li>
+      <li><a href="parceiros.html">Parceiros</a></li>
+      <li><a href="contetor.html">Contetores</a></li>
+      <li><a href="empresas.html">Empresa</a></li>
+    </ul>
+  </div>
+  <div class="containerBody">
+    <div class="card-quarto">
+      <img src="imagem/quartos/quarto1.avif" alt="">
+      <section>
+        <span><strong>Número:</strong>123</span>
+        <span><strong>Andar:</strong>2º</span>
+        <span><strong>quantidade de camas:</strong>1</span>
+      </section>
+      <section>
+        <span><strong>Tipo:</strong></span>
+        <span><strong>Facilidade:</strong></span>
+        <span><strong>valor:</strong></span>
+      </section>
+    </div>
+    <div class="card-quarto">
+      <img src="imagem/quartos/quarto1.avif" alt="">
+      <section>
+        <span><strong>Número:</strong>123</span>
+        <span><strong>Andar:</strong>2º</span>
+        <span><strong>quantidade de camas:</strong>1</span>
+      </section>
+      <section>
+        <span><strong>Tipo:</strong></span>
+        <span><strong>Facilidade:</strong></span>
+        <span><strong>valor:</strong></span>
+      </section>
+    </div>
+    <div class="card-quarto">
+      <img src="imagem/quartos/quarto1.avif" alt="">
+      <section>
+        <span><strong>Número:</strong>123</span>
+        <span><strong>Andar:</strong>2º</span>
+        <span><strong>quantidade de camas:</strong>1</span>
+      </section>
+      <section>
+        <span><strong>Tipo:</strong></span>
+        <span><strong>Facilidade:</strong></span>
+        <span><strong>valor:</strong></span>
+      </section>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="card">
+      <h1>Cadastrar Empresa</h1>
+      <form action="">
+        <div class="card-foto">
+          <img src="" alt="">
+          <h6>foto</h6>
+        </div>
+        <div class="card-dados">
+          <section>
+
+            <label for="mumero" id="labelNumero">
+              NIF:
+              <input type="number" id="numero" placeholder="Digite o NIF">
+              <p></p>
+            </label>
+
+            <label for="andar" id="labelAndar">
+              Quantidade de Carros:
+              <input type="number" id="andar" placeholder="Digite a quantidade de carros">
+              <p></p>
+            </label>
+
+            <label for="quantidadeCama" id="labelQuantidade">
+              Quantidade De Contetor:
+              <input type="number" id="quantidadeCama" placeholder="Digite o Quantidade de Contetor">
+              <p></p>
+            </label>
+
+            <label for="tipo" id="labelTipo">
+              Email:
+              <input type="email" id="tipo" placeholder="Digite o Email">
+              <p></p>
+            </label>
+          </section>
+          <section>
+
+            <label for="facilidade" id="labelFacilidade">
+              Nome:
+              <input type="text" id="facilidade" placeholder="Digite o nome da Empresa">
+              <p></p>
+            </label>
+
+            <label for="valor" id="labelValor">
+              Sector:
+              <input type="text" id="valor" placeholder="Digite o Sector de acção">
+              <p></p>
+            </label>
+
+            <label for="inputFile" id="labelFile">
+              Clique Aqui para Adicionar Foto
+              <input type="file" id="inputFile">
+            </label>
+
+            <div class="card-btton">
+              <button class="buttonCadastrarQuarto">Cadastrar</button>
+              <button class="cancelModal">Cancelar</button>
+            </div>
+          </section>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+:root {
+  --corDadosErrado: red;
+  --corDadosCerto: green;
+  --text-color-bt: #fff;
+  --bt-background: #00D9A5;
+  --text-color-menu: rgba(110, 128, 122, 0.8);
+  --text-color-welcome: #6E807A;
+  --background-welcome: #F7F5FD;
+  --bachground-bt-nossos-dotores: #1D2A4D;
+  --background-nossos-service: #F7F5FD;
+  --h1-about: #13C5DD;
+  --test-footer: #EFF5FF;
+  --background-geral: rgba(255, 255, 255, 0.95);
+  --button-background: #007cc2;
+  --text-color-white: #ffffff;
+  --background-button: #e7f4f4;
+  --box-schadow: 0px 0px 15px #999;
+  --border-bottom: 1px solid var(--text-color-white);
+  --background-geral: #f3f4f5;
+  --border-form-imagem: 2px solid rgb(94, 86, 86);
+  --box-schedow-scrom-header: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  --border-dadosErados: 1px solid var(--corDadosErrado);
+  --border-dadosCertos: 1px solid var(--corDadosCerto);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter";
+}
+
+p {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 16fr;
+  grid-template-rows: 10rem 30rem;
+  grid-template-areas:
+    "menuLeft header"
+    "menuLeft containerBody";
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  transition: all ease .5s;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modal .card {
+  width: 60rem;
+  height: 40rem;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.openModal {
+  display: flex;
+}
+
+body {
+  background: var(--background-geral);
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--text-color-white);
+  background: var(--bachground-bt-nossos-dotores);
+  border: none;
+  cursor: pointer;
+}
+
+.menuLeft {
+  grid-area: menuLeft;
+  background: var(--bachground-bt-nossos-dotores);
+  margin: 3rem 10px 0 10px;
+  height: 26rem;
+  width: 16rem;
+  border-radius: 16px;
+  padding: 10px;
+  position: fixed;
+  box-shadow: var(--box-schadow);
+
+}
+
+ul h1 {
+  margin: 10px 0 .5rem 0;
+  padding: 0 1rem 10px 1rem;
+  text-align: center;
+  color: var(--text-color-white);
+  border-bottom: var(--border-bottom);
+}
+
+ul li {
+  width: 100%;
+  padding: 16px 0 16px 16px;
+}
+
+ul li a {
+  font-size: 1.2rem;
+  color: var(--text-color-white);
+}
+
+ul li i {
+  font-size: 1rem;
+  padding: 0 10px;
+  color: var(--text-color-white);
+}
+
+.containerBody {
+  grid-area: containerBody;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .card-quarto {
+  width: 60rem;
+  height: 10rem;
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+  border: none;
+  background: var(--text-color-white);
+  box-shadow: var(--box-schadow);
+}
+
+.container .card-quarto img {
+  width: 16rem;
+  height: 10rem;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.container .card-quarto section {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0 0 0;
+  gap: 10px;
+  height: 100%;
+}
+
+.container .card-quarto section+section {
+  margin-left: 8rem;
+}
+
+.container .card-quarto section span {
+  height: 2rem;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0 0 0;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label input {
+  width: 18rem;
+  height: 2.5rem;
+  outline: none;
+  border-radius: 16px;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+form button {
+  width: 9.4rem;
+  height: 3rem;
+  margin: 0 auto;
+  border-radius: 16px;
+  font-size: 16px;
+  background: var(--button-background);
+  color: var(--text-color-white);
+  cursor: pointer;
+  border: none;
+}
+
+form .card-dados {
+  display: flex;
+  gap: 20px;
+}
+
+form .card-dados section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form .card-dados section label {
+  height: 6rem;
+}
+
+form .card-foto {
+  width: 16rem;
+  height: 16rem;
+  border: var(--border-form-imagem);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+form .card-foto img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 10px;
+}
+
+form .card-btton {
+  height: 10rem;
+  display: flex;
+  align-items: end;
+}
+
+form #inputFile {
+  display: none;
+}
+
+form #labelFile {
+  margin-top: 1.6rem;
+  border: var(--border-form-imagem);
+  height: 2.5rem;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dadosErrados {
+  color: var(--corDadosErrado);
+}
+
+.dadosCertos {
+  color: var(--corDadosCerto);
+}
