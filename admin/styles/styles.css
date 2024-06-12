@@ -60,7 +60,7 @@ p {
 }
 
 .modal .card {
-  width: 60rem;
+  width: 52rem;
   height: 36rem;
   background-color: #FFF;
   border-radius: 10px;
@@ -182,7 +182,7 @@ ul li i {
 
 form {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   padding: 40px 0 0 0;
 }
 
@@ -193,8 +193,8 @@ form label {
 }
 
 form label input {
-  width: 18rem;
-  height: 2.5rem;
+  width: 16rem;
+  height: 2rem;
   outline: none;
   border-radius: 16px;
   padding: 0 8px;
@@ -215,7 +215,7 @@ form button {
 
 form .card-dados {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 form .card-dados section {
@@ -229,8 +229,8 @@ form .card-dados section label {
 }
 
 form .card-foto {
-  width: 16rem;
-  height: 16rem;
+  width: 10rem;
+  height: 10rem;
   border: var(--border-form-imagem);
   border-radius: 10px;
   display: flex;
@@ -240,14 +240,15 @@ form .card-foto {
 }
 
 form .card-foto img {
-  width: 16rem;
-  height: 16rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 10px;
 }
 
 form .card-btton {
   height: 10rem;
   display: flex;
+  gap: 10px;
   align-items: end;
 }
 
@@ -258,7 +259,7 @@ form #inputFile {
 form #labelFile {
   margin-top: 1.6rem;
   border: var(--border-form-imagem);
-  height: 2.5rem;
+  height: 2rem;
   border-radius: 16px;
   cursor: pointer;
   display: flex;
