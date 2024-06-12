@@ -3,8 +3,8 @@ main {
 }
 
 .title-parceiros {
-  background: white;
-  height: 10rem;
+  background: #f3f4f7;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   padding-left: 6rem;
@@ -42,7 +42,7 @@ td {
 }
 
 th {
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 tr {
